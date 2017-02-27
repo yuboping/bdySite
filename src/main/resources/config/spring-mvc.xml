@@ -14,7 +14,7 @@
     <context:property-placeholder location="classpath:config/jdbc.properties" />
      
     <!-- 自动扫描该包，使SpringMVC认为包下用了@controller注解的类是控制器 -->  
-    <context:component-scan base-package="com.qiandai" />
+    <context:component-scan base-package="com.xirui" />
       
     <bean id="mappingJacksonHttpMessageConverter"  
         class="org.springframework.http.converter.json.MappingJackson2HttpMessageConverter">  
@@ -52,7 +52,7 @@
     </bean>   
     
     <bean id="logbackInitialization" class="org.springframework.beans.factory.config.MethodInvokingFactoryBean">
-    	<property name="targetClass" value="com.qiandai.util.logs.LogbackConfigurer"/>
+    	<property name="targetClass" value="com.xirui.util.logs.LogbackConfigurer"/>
     	<property name="targetMethod" value="initLogback"/>
     	<property name="arguments">
     		<list>
@@ -62,8 +62,8 @@
     </bean>
     
     <!-- 微信拦截器 -->
-    <mvc:interceptors>
-    	<bean class="com.qiandai.interceptor.WxInterceptor"></bean>
-    </mvc:interceptors>
+<!--     <mvc:interceptors>
+    	<bean class="com.xirui.interceptor.WxInterceptor"></bean>
+    </mvc:interceptors> -->
     
 </beans>
