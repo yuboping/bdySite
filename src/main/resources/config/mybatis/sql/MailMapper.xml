@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.xirui.mapper.MailMapper" >
+  <resultMap id="BaseResultMap" type="com.xirui.entity.Mail" >
+    <id column="id" property="id" jdbcType="BIGINT" />
+    <result column="smtp" property="smtp" jdbcType="VARCHAR" />
+    <result column="from" property="from" jdbcType="VARCHAR" />
+    <result column="password" property="password" jdbcType="VARCHAR" />
+    <result column="to" property="to" jdbcType="VARCHAR" />
+    <result column="copyto" property="copyto" jdbcType="VARCHAR" />
+    <result column="subject" property="subject" jdbcType="VARCHAR" />
+    <result column="file_name" property="fileName" jdbcType="VARCHAR" />
+    <result column="time_date" property="timeDate" jdbcType="TIME" />
+    <result column="show" property="show" jdbcType="TIME" />
+    <result column="created_at" property="createdAt" jdbcType="TIMESTAMP" />
+    <result column="updated_at" property="updatedAt" jdbcType="TIMESTAMP" />
+    <result column="deleted_at" property="deletedAt" jdbcType="TIMESTAMP" />
+  </resultMap>
+  <resultMap id="ResultMapWithBLOBs" type="com.xirui.entity.Mail" extends="BaseResultMap" >
+    <result column="content" property="content" jdbcType="LONGVARCHAR" />
+  </resultMap>
+  <sql id="Base_Column_List" >
+    id, smtp, from, password, to, copyto, subject, file_name, time_date, show, created_at, 
+    updated_at, deleted_at
+  </sql>
+  <sql id="Blob_Column_List" >
+    content
+  </sql>
+  <select id="selectByPrimaryKey" resultMap="ResultMapWithBLOBs" parameterType="java.lang.Long" >
+    select 
+    <include refid="Base_Column_List" />
+    ,
+    <include refid="Blob_Column_List" />
+    from mail
+    where id = #{id,jdbcType=BIGINT}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Long" >
+    delete from mail
+    where id = #{id,jdbcType=BIGINT}
+  </delete>
+  <insert id="insert" parameterType="com.xirui.entity.Mail" >
+    insert into mail (id, smtp, from, 
+      password, to, copyto, 
+      subject, file_name, time_date, 
+      show, created_at, updated_at, 
+      deleted_at, content)
+    values (#{id,jdbcType=BIGINT}, #{smtp,jdbcType=VARCHAR}, #{from,jdbcType=VARCHAR}, 
+      #{password,jdbcType=VARCHAR}, #{to,jdbcType=VARCHAR}, #{copyto,jdbcType=VARCHAR}, 
+      #{subject,jdbcType=VARCHAR}, #{fileName,jdbcType=VARCHAR}, #{timeDate,jdbcType=TIME}, 
+      #{show,jdbcType=TIME}, #{createdAt,jdbcType=TIMESTAMP}, #{updatedAt,jdbcType=TIMESTAMP}, 
+      #{deletedAt,jdbcType=TIMESTAMP}, #{content,jdbcType=LONGVARCHAR})
+  </insert>
+  <insert id="insertSelective" parameterType="com.xirui.entity.Mail" >
+    insert into mail
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="id != null" >
+        id,
+      </if>
+      <if test="smtp != null" >
+        smtp,
+      </if>
+      <if test="from != null" >
+        from,
+      </if>
+      <if test="password != null" >
+        password,
+      </if>
+      <if test="to != null" >
+        to,
+      </if>
+      <if test="copyto != null" >
+        copyto,
+      </if>
+      <if test="subject != null" >
+        subject,
+      </if>
+      <if test="fileName != null" >
+        file_name,
+      </if>
+      <if test="timeDate != null" >
+        time_date,
+      </if>
+      <if test="show != null" >
+        show,
+      </if>
+      <if test="createdAt != null" >
+        created_at,
+      </if>
+      <if test="updatedAt != null" >
+        updated_at,
+      </if>
+      <if test="deletedAt != null" >
+        deleted_at,
+      </if>
+      <if test="content != null" >
+        content,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="id != null" >
+        #{id,jdbcType=BIGINT},
+      </if>
+      <if test="smtp != null" >
+        #{smtp,jdbcType=VARCHAR},
+      </if>
+      <if test="from != null" >
+        #{from,jdbcType=VARCHAR},
+      </if>
+      <if test="password != null" >
+        #{password,jdbcType=VARCHAR},
+      </if>
+      <if test="to != null" >
+        #{to,jdbcType=VARCHAR},
+      </if>
+      <if test="copyto != null" >
+        #{copyto,jdbcType=VARCHAR},
+      </if>
+      <if test="subject != null" >
+        #{subject,jdbcType=VARCHAR},
+      </if>
+      <if test="fileName != null" >
+        #{fileName,jdbcType=VARCHAR},
+      </if>
+      <if test="timeDate != null" >
+        #{timeDate,jdbcType=TIME},
+      </if>
+      <if test="show != null" >
+        #{show,jdbcType=TIME},
+      </if>
+      <if test="createdAt != null" >
+        #{createdAt,jdbcType=TIMESTAMP},
+      </if>
+      <if test="updatedAt != null" >
+        #{updatedAt,jdbcType=TIMESTAMP},
+      </if>
+      <if test="deletedAt != null" >
+        #{deletedAt,jdbcType=TIMESTAMP},
+      </if>
+      <if test="content != null" >
+        #{content,jdbcType=LONGVARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.xirui.entity.Mail" >
+    update mail
+    <set >
+      <if test="smtp != null" >
+        smtp = #{smtp,jdbcType=VARCHAR},
+      </if>
+      <if test="from != null" >
+        from = #{from,jdbcType=VARCHAR},
+      </if>
+      <if test="password != null" >
+        password = #{password,jdbcType=VARCHAR},
+      </if>
+      <if test="to != null" >
+        to = #{to,jdbcType=VARCHAR},
+      </if>
+      <if test="copyto != null" >
+        copyto = #{copyto,jdbcType=VARCHAR},
+      </if>
+      <if test="subject != null" >
+        subject = #{subject,jdbcType=VARCHAR},
+      </if>
+      <if test="fileName != null" >
+        file_name = #{fileName,jdbcType=VARCHAR},
+      </if>
+      <if test="timeDate != null" >
+        time_date = #{timeDate,jdbcType=TIME},
+      </if>
+      <if test="show != null" >
+        show = #{show,jdbcType=TIME},
+      </if>
+      <if test="createdAt != null" >
+        created_at = #{createdAt,jdbcType=TIMESTAMP},
+      </if>
+      <if test="updatedAt != null" >
+        updated_at = #{updatedAt,jdbcType=TIMESTAMP},
+      </if>
+      <if test="deletedAt != null" >
+        deleted_at = #{deletedAt,jdbcType=TIMESTAMP},
+      </if>
+      <if test="content != null" >
+        content = #{content,jdbcType=LONGVARCHAR},
+      </if>
+    </set>
+    where id = #{id,jdbcType=BIGINT}
+  </update>
+  <update id="updateByPrimaryKeyWithBLOBs" parameterType="com.xirui.entity.Mail" >
+    update mail
+    set smtp = #{smtp,jdbcType=VARCHAR},
+      from = #{from,jdbcType=VARCHAR},
+      password = #{password,jdbcType=VARCHAR},
+      to = #{to,jdbcType=VARCHAR},
+      copyto = #{copyto,jdbcType=VARCHAR},
+      subject = #{subject,jdbcType=VARCHAR},
+      file_name = #{fileName,jdbcType=VARCHAR},
+      time_date = #{timeDate,jdbcType=TIME},
+      show = #{show,jdbcType=TIME},
+      created_at = #{createdAt,jdbcType=TIMESTAMP},
+      updated_at = #{updatedAt,jdbcType=TIMESTAMP},
+      deleted_at = #{deletedAt,jdbcType=TIMESTAMP},
+      content = #{content,jdbcType=LONGVARCHAR}
+    where id = #{id,jdbcType=BIGINT}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.xirui.entity.Mail" >
+    update mail
+    set smtp = #{smtp,jdbcType=VARCHAR},
+      from = #{from,jdbcType=VARCHAR},
+      password = #{password,jdbcType=VARCHAR},
+      to = #{to,jdbcType=VARCHAR},
+      copyto = #{copyto,jdbcType=VARCHAR},
+      subject = #{subject,jdbcType=VARCHAR},
+      file_name = #{fileName,jdbcType=VARCHAR},
+      time_date = #{timeDate,jdbcType=TIME},
+      show = #{show,jdbcType=TIME},
+      created_at = #{createdAt,jdbcType=TIMESTAMP},
+      updated_at = #{updatedAt,jdbcType=TIMESTAMP},
+      deleted_at = #{deletedAt,jdbcType=TIMESTAMP}
+    where id = #{id,jdbcType=BIGINT}
+  </update>
+</mapper>

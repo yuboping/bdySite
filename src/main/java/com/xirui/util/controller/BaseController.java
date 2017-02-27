@@ -44,7 +44,7 @@ public class BaseController {
 			params.put("ipN", ia.getLocalHost());
 		} catch (UnknownHostException e) {
 			e.printStackTrace();
-			logger.error("ip error:" + e.getMessage());
+//			logger.error("ip error:" + e.getMessage());
 		}
 		return params;
 	} 
