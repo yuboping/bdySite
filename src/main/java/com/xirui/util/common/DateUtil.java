@@ -9,7 +9,7 @@ import java.util.Date;
  * <p>Title:DateUtil</p>
  * <p>Description:���ڹ�����</p>
  * <p>Company:����Ǯ������˾�Ͼ��ֹ�˾</p>
- * @author wanghaitao01@new4g.cn
+ * @author yuboping
  * @date 2016��5��10������1:54:03
  */
 public class DateUtil {
@@ -21,10 +21,10 @@ public class DateUtil {
 	public static final String C_DATES_PATTON_DEFAULT = "yyyyMMdd";
 	public static final String T_TIMES_PATTON_DEFAULT = "HHmmss";
 
-	public static final long C_ONE_SECOND = 1000; // 
-	public static final long C_ONE_MINUTE = 60 * C_ONE_SECOND; //
-	public static final long C_ONE_HOUR = 60 * C_ONE_MINUTE; // 
-	public static final long C_ONE_DAY = 24 * C_ONE_HOUR; //
+	public static final long C_ONE_SECOND = 1000; 
+	public static final long C_ONE_MINUTE = 60 * C_ONE_SECOND; 
+	public static final long C_ONE_HOUR = 60 * C_ONE_MINUTE; 
+	public static final long C_ONE_DAY = 24 * C_ONE_HOUR; 
 
 
 	private static SimpleDateFormat getSimpleDateFormat(String format) {

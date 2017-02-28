@@ -28,10 +28,10 @@ import org.slf4j.LoggerFactory;
  * Description:邮件发送工具类
  * </p>
  * <p>
- * Company:北京钱袋宝公司南京分公司
+ * Company:yuboping
  * </p>
  * 
- * @author wanghaitao01@new4g.cn
+ * @author yuboping
  * @date 2016年5月10日下午3:01:46
  */
 public class MailUtils {
@@ -61,7 +61,7 @@ public class MailUtils {
 	 * Description:
 	 * </p>
 	 * 
-	 * @author wanghaitao01@new4g.cn
+	 * @author yuboping
 	 * @date 2016年5月10日 下午3:04:39
 	 * @param hostName
 	 */
@@ -77,7 +77,7 @@ public class MailUtils {
 	 * Description:
 	 * </p>
 	 * 
-	 * @author wanghaitao01@new4g.cn
+	 * @author yuboping
 	 * @date 2016年5月10日 下午3:04:55
 	 * @return
 	 */
@@ -105,7 +105,7 @@ public class MailUtils {
 	 * Description:
 	 * </p>
 	 * 
-	 * @author wanghaitao01@new4g.cn
+	 * @author yuboping
 	 * @date 2016年5月10日 下午3:05:02
 	 * @param need
 	 */
@@ -125,7 +125,7 @@ public class MailUtils {
 	 * Description:
 	 * </p>
 	 * 
-	 * @author wanghaitao01@new4g.cn
+	 * @author yuboping
 	 * @date 2016年5月10日 下午3:05:09
 	 * @param name
 	 * @param pass
@@ -141,7 +141,7 @@ public class MailUtils {
 	 * Description:
 	 * </p>
 	 * 
-	 * @author wanghaitao01@new4g.cn
+	 * @author yuboping
 	 * @date 2016年5月10日 下午3:05:14
 	 * @param mailSubject
 	 * @return
@@ -163,7 +163,7 @@ public class MailUtils {
 	 * Description:
 	 * </p>
 	 * 
-	 * @author wanghaitao01@new4g.cn
+	 * @author yuboping
 	 * @date 2016年5月10日 下午3:05:21
 	 * @param mailBody
 	 * @return
@@ -186,7 +186,7 @@ public class MailUtils {
 	 * Description:添加附件
 	 * </p>
 	 * 
-	 * @author wanghaitao01@new4g.cn
+	 * @author yuboping
 	 * @date 2016年5月10日 下午3:05:28
 	 * @param filename
 	 * @return
@@ -213,7 +213,7 @@ public class MailUtils {
 	 * Description:
 	 * </p>
 	 * 
-	 * @author wanghaitao01@new4g.cn
+	 * @author yuboping
 	 * @date 2016年5月10日 下午3:05:34
 	 * @param from
 	 * @return
@@ -235,7 +235,7 @@ public class MailUtils {
 	 * Description:
 	 * </p>
 	 * 
-	 * @author wanghaitao01@new4g.cn
+	 * @author yuboping
 	 * @date 2016年5月10日 下午3:05:40
 	 * @param to
 	 * @return
@@ -258,7 +258,7 @@ public class MailUtils {
 	 * Description:
 	 * </p>
 	 * 
-	 * @author wanghaitao01@new4g.cn
+	 * @author yuboping
 	 * @date 2016年5月10日 下午3:05:45
 	 * @param copyto
 	 * @return
@@ -293,7 +293,7 @@ public class MailUtils {
 	 * Description:
 	 * </p>
 	 * 
-	 * @author wanghaitao01@new4g.cn
+	 * @author yuboping
 	 * @date 2016年5月10日 下午3:05:53
 	 * @param isCopyto
 	 * @return
@@ -330,7 +330,7 @@ public class MailUtils {
 	 * Description:发送邮件
 	 * </p>
 	 * 
-	 * @author wanghaitao01@new4g.cn
+	 * @author yuboping
 	 * @date 2016年5月10日 下午3:06:37
 	 * @param smtp
 	 * @param from
@@ -377,7 +377,7 @@ public class MailUtils {
 	 * Description:发送邮件,代抄送
 	 * </p>
 	 * 
-	 * @author wanghaitao01@new4g.cn
+	 * @author yuboping
 	 * @date 2016年5月10日 下午3:08:03
 	 * @param smtp
 	 * @param from
@@ -428,7 +428,7 @@ public class MailUtils {
 	 * Description:
 	 * </p>
 	 * 
-	 * @author wanghaitao01@new4g.cn
+	 * @author yuboping
 	 * @date 2016年5月10日 下午3:09:34
 	 * @param smtp
 	 * @param from
@@ -479,7 +479,7 @@ public class MailUtils {
 	 * Description:
 	 * </p>
 	 * 
-	 * @author wanghaitao01@new4g.cn
+	 * @author yuboping
 	 * @date 2016年5月10日 下午3:11:36
 	 * @param smtp
 	 * @param from
@@ -536,7 +536,7 @@ public class MailUtils {
 	 * Description:
 	 * </p>
 	 * 
-	 * @author wanghaitao01@new4g.cn
+	 * @author yuboping
 	 * @date 2016年5月10日 下午3:11:15
 	 * @param smtp
 	 * @param from
@@ -582,7 +582,7 @@ public class MailUtils {
 	 * Description:发送邮件,代抄送
 	 * </p>
 	 * 
-	 * @author wanghaitao01@new4g.cn
+	 * @author yuboping
 	 * @date 2016��5��6������10:22:56
 	 * @param to
 	 * @param copyto
@@ -593,8 +593,8 @@ public class MailUtils {
 	public static boolean sendToc(String to, String copyto, String subject,
 			String content) {
 		String smtp = "smtp.exmail.qq.com"; // SMTP
-		String from = "wanghaitao01@new4g.cn";
-		String username = "wanghaitao01@new4g.cn";
+		String from = "yuboping";
+		String username = "yuboping";
 		String password = "Wht007521";
 		return sendAndC(smtp, from, to, copyto, subject, content, username,
 				password);
@@ -606,7 +606,7 @@ public class MailUtils {
 	 * Description:发送邮件,代抄送,代附件
 	 * </p>
 	 * 
-	 * @author wanghaitao01@new4g.cn
+	 * @author yuboping
 	 * @date 2016��5��6������10:23:21
 	 * @param to
 	 * @param copyto
@@ -618,8 +618,8 @@ public class MailUtils {
 	public static boolean sendToc(String to, String copyto, String subject,
 			String content, String fileName, String path) {
 		String smtp = "smtp.exmail.qq.com"; // SMTP
-		String from = "wanghaitao01@new4g.cn";
-		String username = "wanghaitao01@new4g.cn";
+		String from = "yuboping";
+		String username = "yuboping";
 		String password = "Wht007521";
 		return sendAndC(smtp, from, to, copyto, subject, content, username,
 				password, fileName, path);
@@ -631,7 +631,7 @@ public class MailUtils {
 	 * Description:发送基本邮件
 	 * </p>
 	 * 
-	 * @author wanghaitao01@new4g.cn
+	 * @author yuboping
 	 * @date 2016年7月8日 下午4:10:17
 	 * @param to
 	 * @param subject
@@ -640,8 +640,8 @@ public class MailUtils {
 	 */
 	public static boolean sendToc(String to, String subject, String content) {
 		String smtp = "smtp.exmail.qq.com"; // SMTP
-		String from = "wanghaitao01@new4g.cn";
-		String username = "wanghaitao01@new4g.cn";
+		String from = "yuboping";
+		String username = "yuboping";
 		String password = "Wht007521";
 		return sendAndC(smtp, from, to, subject, content, username, password);
 	}

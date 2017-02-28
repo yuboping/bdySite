@@ -4,8 +4,8 @@ package com.xirui.util.config;
  * 
  * <p>Title:Global</p>
  * <p>Description:</p>
- * <p>Company:北京钱袋宝公司南京分公司</p>
- * @author wanghaitao01@new4g.cn
+ * <p>Company:yuboping</p>
+ * @author yuboping
  * @date 2016年5月13日下午2:21:36
  */
 public class Global {

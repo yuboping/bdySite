@@ -21,10 +21,10 @@ import ch.qos.logback.classic.joran.JoranConfigurator;
  * Description:logback日志加载类
  * </p>
  * <p>
- * Company:北京钱袋宝公司南京分公司 	
+ * Company:yuboping 	
  * </p>
  * 
- * @author wanghaitao01@new4g.cn
+ * @author yuboping
  * @date 2016年5月20日下午2:30:03
  */
 public class LogbackConfigurer {
@@ -34,7 +34,7 @@ public class LogbackConfigurer {
 	/**
 	 * 
 	 * <p>Description:配置初始化日志文件</p>
-	 * @author wanghaitao01@new4g.cn
+	 * @author yuboping
 	 * @date 2016年5月20日 下午2:44:43
 	 * @param locations
 	 */

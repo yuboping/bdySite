@@ -17,10 +17,10 @@ import java.security.spec.X509EncodedKeySpec;
  * Description:
  * </p>
  * <p>
- * Company:北京钱袋宝公司南京分公司
+ * Company:yuboping
  * </p>
  * 
- * @author wanghaitao01@new4g.cn
+ * @author yuboping
  * @date 2016年5月18日上午10:28:36
  */
 public class TraderRSAUtil {
@@ -29,7 +29,7 @@ public class TraderRSAUtil {
 	/**
 	 * 
 	 * <p>Description:签名处理</p>
-	 * @author wanghaitao01@new4g.cn
+	 * @author yuboping
 	 * @date 2016年5月18日 上午10:45:05
 	 * @param prikeyvalue 私钥
 	 * @param sign_str 签名源内容
@@ -55,7 +55,7 @@ public class TraderRSAUtil {
 	/**
 	 * 
 	 * <p>Description:签名验证</p>
-	 * @author wanghaitao01@new4g.cn
+	 * @author yuboping
 	 * @date 2016年5月18日 上午10:45:11
 	 * @param pubkeyvalue 公钥
 	 * @param oid_str 源内容

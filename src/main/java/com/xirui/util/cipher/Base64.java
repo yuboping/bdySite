@@ -15,10 +15,10 @@ import sun.misc.BASE64Decoder;
  * Description:base64
  * </p>
  * <p>
- * Company:北京钱袋宝公司南京分公司
+ * Company:yuboping
  * </p>
  * 
- * @author wanghaitao01@new4g.cn
+ * @author yuboping
  * @date 2016年5月18日上午10:30:07
  */
 public class Base64 {

@@ -14,8 +14,8 @@ import org.dom4j.Element;
  * 
  * <p>Title:ParseXml2Object</p>
  * <p>Description:xml转对象</p>
- * <p>Company:北京钱袋宝公司南京分公司</p>
- * @author wanghaitao01@new4g.cn
+ * <p>Company:yuboping</p>
+ * @author yuboping
  * @date 2016年5月25日上午11:08:14
  */
 public class ParseXml2Object {

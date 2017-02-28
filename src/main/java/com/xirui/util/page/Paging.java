@@ -10,8 +10,8 @@ import com.xirui.util.config.Contants;
 /**
  * <p>Title:Paging</p>
  * <p>Description:分页</p>
- * <p>Company:北京钱袋宝公司南京分公司</p>
- * @author wanghaitao01@new4g.cn
+ * <p>Company:yuboping</p>
+ * @author yuboping
  * @date 2016年7月18日上午10:29:30
  */
 public class Paging implements Serializable {

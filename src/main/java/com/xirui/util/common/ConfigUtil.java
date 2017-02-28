@@ -17,7 +17,7 @@ public class ConfigUtil {
 	/**
 	 * 
 	 * <p>Description:获取属性值</p>
-	 * @author wanghaitao01@new4g.cn
+	 * @author yuboping
 	 * @date 2016年5月25日 上午11:06:42
 	 * @param key
 	 * @return
@@ -30,7 +30,7 @@ public class ConfigUtil {
 	/**
 	 * 
 	 * <p>Description:加载属性文件</p>
-	 * @author wanghaitao01@new4g.cn
+	 * @author yuboping
 	 * @date 2016年5月25日 上午11:07:26
 	 * @return
 	 */

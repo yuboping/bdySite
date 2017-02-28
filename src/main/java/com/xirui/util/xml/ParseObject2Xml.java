@@ -18,8 +18,8 @@ import org.slf4j.LoggerFactory;
  * 
  * <p>Title:ParseObject2Xml</p>
  * <p>Description:对象转xml</p>
- * <p>Company:北京钱袋宝公司南京分公司</p>
- * @author wanghaitao01@new4g.cn
+ * <p>Company:yuboping</p>
+ * @author yuboping
  * @date 2016年5月25日上午11:11:20
  */
 public class ParseObject2Xml {

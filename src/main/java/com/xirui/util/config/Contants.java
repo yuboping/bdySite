@@ -6,8 +6,8 @@ package com.xirui.util.config;
 /**
  * <p>Title:Contants</p>
  * <p>Description:常量类</p>
- * <p>Company:北京钱袋宝公司南京分公司</p>
- * @author wanghaitao01@new4g.cn
+ * <p>Company:yuboping</p>
+ * @author yuboping
  * @date 2016年5月13日下午2:21:20
  */
 public class Contants {

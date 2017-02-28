@@ -18,6 +18,8 @@
 		<slf4j.version>1.7.18</slf4j.version>
 		<!-- fastjson版本号 -->
 		<fastjson.version>1.1.41</fastjson.version>
+		<!-- cxf 接口 -->
+    	<cxf.version>3.1.6</cxf.version>
 	</properties>
 	<repositories>
 		<repository>
@@ -246,17 +248,59 @@
 		    <artifactId>aspectjrt</artifactId>
 		    <version>1.8.9</version>
 		</dependency>
+		
+		<dependency>
+			<groupId>com.github.sgroschupf</groupId>
+			<artifactId>zkclient</artifactId>
+			<version>0.1</version>
+		</dependency>
+		
+		<dependency>
+			<groupId>org.jboss.netty</groupId>
+			<artifactId>netty</artifactId>
+			<version>3.2.10.Final</version>
+		</dependency>
+		
+		<dependency>
+		    <groupId>commons-lang</groupId>
+		    <artifactId>commons-lang</artifactId>
+		    <version>2.6</version>
+		</dependency>
+		
+		<!-- <dependency>
+		    <groupId>com.alibaba</groupId>
+		    <artifactId>dubbo</artifactId>
+		    <version>2.5.3</version>
+		    <exclusions>
+				排除依赖的spring jar包
+				<exclusion>
+					<groupId>org.springframework</groupId>
+					<artifactId>spring</artifactId>
+				</exclusion>
+				<exclusion>
+					<artifactId>netty</artifactId>
+					<groupId>org.jboss.netty</groupId>
+				</exclusion>
+			</exclusions>
+		</dependency>	 -->
+		
+		<!-- <dependency>
+			<groupId>com.qdb.utils</groupId>
+			<artifactId>utils-spi</artifactId>
+			<version>1.2.64</version>
+		</dependency> -->
+		
 		<!-- cxf begin -->
 		<!-- <dependency>  
 		    <groupId>org.apache.cxf</groupId>  
 		    <artifactId>cxf-rt-frontend-jaxws</artifactId>  
 		    <version>${cxf.version}</version>  
-		</dependency> -->  
-		<!-- <dependency>  
+		</dependency>  
+		<dependency>  
 			<groupId>org.apache.cxf</groupId>  
 			<artifactId>cxf-rt-transports-http</artifactId>  
 			<version>${cxf.version}</version>  
-		</dependency>  --> 
+		</dependency>   -->
 		<!-- cxf end -->
 	</dependencies>
 	<build>

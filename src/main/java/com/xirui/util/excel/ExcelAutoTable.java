@@ -22,8 +22,8 @@ import org.apache.poi.ss.util.CellRangeAddress;
 /**
  * <p>Title:ExcelAutoTable</p>
  * <p>Description:</p>
- * <p>Company:北京钱袋宝公司南京分公司</p>
- * @author wanghaitao01@new4g.cn
+ * <p>Company:yuboping</p>
+ * @author yuboping
  * @date 2016年7月6日下午3:16:53
  */
 public class ExcelAutoTable {

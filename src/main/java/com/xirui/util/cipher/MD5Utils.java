@@ -9,8 +9,8 @@ import org.slf4j.LoggerFactory;
  * 
  * <p>Title:MD5Utils</p>
  * <p>Description:MD5加密工具类</p>
- * <p>Company:北京钱袋宝公司南京分公司</p>
- * @author wanghaitao01@new4g.cn
+ * <p>Company:yuboping</p>
+ * @author yuboping
  * @date 2016年5月25日上午11:09:46
  */
 public class MD5Utils {
@@ -20,7 +20,7 @@ public class MD5Utils {
 	/**
 	 * 
 	 * <p>Description:获取MD5加密信息</p>
-	 * @author wanghaitao01@new4g.cn
+	 * @author yuboping
 	 * @date 2016年5月25日 上午11:10:09
 	 * @param sourceStr
 	 * @return

@@ -16,10 +16,10 @@ import javax.servlet.http.HttpServletRequest;
  * Description:路径工具类
  * </p>
  * <p>
- * Company:北京钱袋宝公司南京分公司
+ * Company:yuboping
  * </p>
  * 
- * @author wanghaitao01@new4g.cn
+ * @author yuboping
  * @date 2016年7月15日下午2:44:50
  */
 public class PathUtils {
@@ -27,7 +27,7 @@ public class PathUtils {
 	/**
 	 * 
 	 * <p>Description:根据request获取项目路径</p>
-	 * @author wanghaitao01@new4g.cn
+	 * @author yuboping
 	 * @date 2016年7月15日 下午2:46:23
 	 * @param path
 	 * @return
@@ -45,7 +45,7 @@ public class PathUtils {
 	/**
 	 * 
 	 * <p>Description:根据类获取项目路径</p>
-	 * @author wanghaitao01@new4g.cn
+	 * @author yuboping
 	 * @date 2016年7月19日 下午4:22:59
 	 * @return
 	 */

@@ -14,8 +14,8 @@ import org.slf4j.LoggerFactory;
  * 
  * <p>Title:BaseController</p>
  * <p>Description:控制器基类</p>
- * <p>Company:北京钱袋宝公司南京分公司</p>
- * @author wanghaitao01@new4g.cn
+ * <p>Company:yuboping</p>
+ * @author yuboping
  * @date 2016年5月10日下午3:00:53
  */
 public class BaseController {
