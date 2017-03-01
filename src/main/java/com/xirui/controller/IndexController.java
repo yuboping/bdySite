@@ -3,6 +3,7 @@ package com.xirui.controller;
 import java.util.Map;
 
 import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -23,7 +24,7 @@ public class IndexController extends BaseController {
 
 	@Autowired
 	IndexService indexService;
-	
+
 	@RequestMapping("index")
 	public String index(HttpServletRequest request) {
 		logger.info("----------进入西瑞公司主页----------");
@@ -33,11 +34,18 @@ public class IndexController extends BaseController {
 	}
 
 	@ResponseBody
-	@RequestMapping("user")
-	public String user(HttpServletRequest request) {
-		return "user";
+	@RequestMapping("weixin")
+	public String weixin(HttpServletRequest request,
+			HttpServletResponse response) {
+		Map<String, Object> params = getParams(request);
+		logger.info(params.get("signature").toString());
+		logger.info(params.get("timestamp").toString());
+		logger.info(params.get("nonce").toString());
+		logger.info(params.get("echostr").toString());
+		writetoclient(params.get("echostr").toString(), response);
+		return params.get("echostr").toString();
 	}
-	
+
 	@RequestMapping("login")
 	public String login(HttpServletRequest request) {
 		return "login";
