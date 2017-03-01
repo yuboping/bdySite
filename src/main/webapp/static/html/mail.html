@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<button onclick="a()">点击</button>
+<div id="mail" style="width:50px;height: 50px;"></div>
+</body>
+<script type="text/javascript" src="static/js/jquery-1.9.1.min.js"></script>
+<script>
+function a() {
+	$.ajax({
+	    type: "post",
+	    dataType: "JSON",
+	    url: 'http://localhost:8080/bdySite/mail.do',
+	    data: {
+	    	smtp : "俞波平"
+		},
+	    success: function (data) {
+	        if (data != "") {
+	        	document.getElementById("mail").innerHTML=data;
+	        }
+	    }
+	});
+}
+</script>
+</html>

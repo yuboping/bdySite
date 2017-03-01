@@ -46,8 +46,11 @@ public class IndexController extends BaseController {
 		return params.get("echostr").toString();
 	}
 
-	@RequestMapping("login")
-	public String login(HttpServletRequest request) {
-		return "login";
+	@ResponseBody
+	@RequestMapping("mail")
+	public String mail(HttpServletRequest request) {
+		logger.info("----------点击----------");
+		Map<String, Object> params = getParams(request);
+		return params.get("smtp").toString();
 	}
 }
