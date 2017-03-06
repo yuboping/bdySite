@@ -33,17 +33,14 @@ public class IndexController extends BaseController {
 		return "index";
 	}
 
-	@ResponseBody
 	@RequestMapping("weixin")
-	public String weixin(HttpServletRequest request,
-			HttpServletResponse response) {
+	public void weixin(HttpServletRequest request, HttpServletResponse response) {
 		Map<String, Object> params = getParams(request);
 		logger.info(params.get("signature").toString());
 		logger.info(params.get("timestamp").toString());
 		logger.info(params.get("nonce").toString());
 		logger.info(params.get("echostr").toString());
 		writetoclient(params.get("echostr").toString(), response);
-		return params.get("echostr").toString();
 	}
 
 	@ResponseBody
